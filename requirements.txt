@@ -1,0 +1,5 @@
+tenacity==7.0.0
+youtube_dl==2021.3.14
+requests_toolbelt==0.9.1
+requests==2.24.0
+bilibiliupload==0.2.4

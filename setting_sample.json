@@ -1,0 +1,19 @@
+{
+    "proxy": "127.0.0.1:1080",
+    "users": [
+        {
+            "cookie": "_uuid=3AC02D9D-DE34-E9B7-1A53-528FA072AF7293753infoc; buvid3=9DDA33BE-7331-4580-B05A-5D52A67859D6105014infoc; buvid_fp=9D3A83BE-7241-4510-B01A-5D52A67851D6185013infoc; CURRENT_FNVAL=80; blackside_state=1; rpdid=|(kRaJ)m)mY1J'uYJ|k|mulk; LIVE_BUVID=AUTO5116119811807195; bp_article_offset_695794=495131243090293232; bp_t_offset_695794=497508109030504257; bp_video_offset_695794=498925309340507125; fingerprint=6a0f793397a0acba15e68a8293dfdfd1; buvid_fp_plain=9D3A35BE-7331-4560-B05A-5D52A69859D6185313infoc; SESSDATA=c97cefcc%2C1631556026%2C63ca3%2A41; bili_jct=7fbf20cff067b486d8abcf4f5f2d4787; DedeUserID=2086443361; DedeUserID__ckMd5=c78223b3927ccae5; sid=8x19qnvg; bp_video_offset_2086573162=494440964495648377; bsource=search_google; PVID=4; bp_t_offset_2086573162=501610600648740408; CURRENT_QUALITY=64; bfe_id=6f285c892d9d3c1f8f0d98dad8bed553",
+            "tid": 95,
+            "like": { "count": 200, "sleep": 3 },
+            "tags": ["数码", "黑科技"],
+            "channels": [
+                "UCBJycsmduvYEL83R_U4JriQ",
+                "UC9fSZHEh6XsRpX-xJc6lT3A",
+                "UCey_c7U86mJGz1VJWH5CYPA",
+                "UCsTcErHg8oDvUnTzoqsYeNw",
+                "UCMiJRAwDNSNzuYeN2uWa0pA"
+            ],
+            "last_updated": ""
+        }
+    ]
+}
