@@ -12,9 +12,10 @@
 
 ## Usage
 
-1. `pip install -r requirements.txt`
-2. 复制 `setting_sample.json` 为 `setting.json` ，根据实际情况修改 COOKIE 等内容
-3. `python u2b2b.py`；或将其添加为计划任务定时运行
+1. [下载 ffmpeg](https://www.ffmpeg.org/download.html)，并确保其路径位于环境变量中
+2. `pip install -r requirements.txt`
+3. 复制 `setting_sample.json` 为 `setting.json` ，根据实际情况修改 COOKIE 等内容
+4. `python u2b2b.py`；或将其添加为计划任务定时运行
 
 ## `sample.json`内容说明
 
