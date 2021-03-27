@@ -38,6 +38,7 @@
 ## Changelog
 
 - v1.0: 实现自动搬运、自动字幕硬压等基本功能
+- v1.1: 修复若干小 bug
 
 ## Demo
 - [U2B2B数码](https://space.bilibili.com/2086473161/video)

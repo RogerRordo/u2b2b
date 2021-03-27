@@ -13,7 +13,7 @@ from bilibiliupload import VideoPart
 
 class bilibili:
     @classmethod
-    def __getYesterdayStr():
+    def __getYesterdayStr(cls):
         ''' 昨天的yyyymmdd字符串 '''
         return datetime.strftime(datetime.now() - timedelta(days=1), '%Y%m%d')
 

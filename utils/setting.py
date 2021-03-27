@@ -45,5 +45,5 @@ class setting:
         utcNow = cls.__local2utc(datetime.now()).strftime('%Y-%m-%dT%H:%M:%S+00:00')
         logging.debug('现在是 UTC 时间 {}'.format(utcNow))
         st['users'][userId]['last_updated'] = utcNow
-        with open('setting.json', 'w', encoding='utf-8') as f:
+        with open('setting.json', 'w+', encoding='utf-8') as f:
             json.dump(st, f, ensure_ascii=False)

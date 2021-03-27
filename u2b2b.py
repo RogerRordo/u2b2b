@@ -10,7 +10,7 @@ from utils.bilibili import bilibili
 from utils.youtube import youtube
 
 log = logging.getLogger()
-DEBUG = True
+DEBUG = False
 
 
 def main():
@@ -89,8 +89,16 @@ def main():
         logging.info('正在保存 setting.json...')
         setting.save(st, userId)
 
+        # 再次 check Cookie
+        sleep(5)
+        try:
+            bilibili.checkCookie(bl)
+        except Exception as e:
+            logging.error('user {} -> {}'.format(userId, e))
+            continue
+
         # 点赞评论
-        sleep(10)
+        sleep(5)
         try:
             bilibili.likeComment(bl, user['tid'], user['like'])
         except Exception as e:
@@ -106,7 +114,7 @@ if __name__ == '__main__':
         log.setLevel(logging.DEBUG)
     else:
         logging.basicConfig(filename='log.txt',
-                            filemode='w+',
+                            filemode='a+',
                             format='levelname:%(levelname)s filename: %(filename)s '
                             'outputNumber: [%(lineno)d]  thread: %(threadName)s output msg:  %(message)s'
                             ' - %(asctime)s',

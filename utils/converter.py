@@ -80,7 +80,7 @@ class converter:
     @classmethod
     def __subs2ass(cls, subs, assPath):
         ''' export subs to .ass file '''
-        with open(assPath, 'w') as f:
+        with open(assPath, 'w+') as f:
             f.write(cls.__SCRIPT_INFO_HEADER + cls.__V4STYLE_HEADER + cls.__STYLE + cls.__EVENTS_HEADER)
             for i in range(len(subs)):
                 times, words = subs[i]
@@ -121,7 +121,7 @@ class converter:
 
     @classmethod
     def __subs2bcc(cls, subs, bccPath):
-        with open(bccPath, 'w') as f:
+        with open(bccPath, 'w+') as f:
             lastLine = ''
             body = []
             for i in range(len(subs) - 1):
@@ -184,6 +184,8 @@ class converter:
 
         '''
         origFmt = info['thumbnail'].split('.')[-1].split('?')[0]
+        if origFmt == 'jpg':
+            return
         origPath = '{}/{}.{}'.format(tempDir, info['id'], origFmt)
         newPath = '{}/{}.jpg'.format(tempDir, info['id'])
         logging.debug('正在转换封面 {} -> {} ...'.format(origPath, newPath))
